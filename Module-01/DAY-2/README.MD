@@ -1,7 +1,7 @@
 # Ex.No:1(B) VARIABLES AND OPERATOR
 
 ## AIM:
-To write a Java program to get values of variables 'a' and 'b' and then check if both the conditions 'a < 50' and 'a < b' are true. [Class name is ‘Demo’]
+To Write a Java programs to get marks and find the average and display the grade.
 
 ## ALGORITHM :
 1.	Start the program.
@@ -24,22 +24,53 @@ b)	If the condition is false, print "false" using the 'print' method of 'System.
  ```
 /*
 Program to implement a variable and operators using Java
-Developed by: 
-RegisterNumber:  
+Developed by: J.JANANI
+RegisterNumber:  212223230085
 */
+
+import java.util.Scanner;
+public class Main{
+    public static void main(String[] args)
+    {
+        int m1,m2,m3,m4,m5;
+        float total=0,avg;
+        Scanner s=new Scanner(System.in);
+        m1=s.nextInt();
+        m2=s.nextInt();
+        m3=s.nextInt();
+        m4=s.nextInt();
+        m5=s.nextInt();
+        
+        total=m1+m2+m3+m4+m5;
+        avg=total/5;
+        System.out.print("The student Grade is: ");
+        if(avg >=80)
+        {
+            System.out.print("A");
+        }
+        else if(avg<80 && avg>=60)
+        {
+          System.out.print("B");
+        }
+        else if(avg <60 && avg>=40)
+        {
+            System.out.print("C");
+        }
+        else
+        {
+            System.out.print("D");
+        }
+    }
+}
+
+
 ```
-
-## Sourcecode.java:
-
-
-
-
 
 
 
 ## OUTPUT:
 
-
+"C:\Users\admin\Pictures\Screenshots\Screenshot 2025-05-02 155000.png"
 
 ## RESULT:
-Thus, the Java program to get values of variables 'a' and 'b' and then check if both the conditions 'a < 50' and 'a < b' are true is created successfully.
+Thus, the Java program  to get marks and find the average and display the grade is created successfully.
